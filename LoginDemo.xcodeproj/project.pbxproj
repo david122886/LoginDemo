@@ -22,6 +22,11 @@
 		63ED46A818A4B836002C8674 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED468718A4B835002C8674 /* UIKit.framework */; };
 		63ED46B018A4B836002C8674 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63ED46AE18A4B836002C8674 /* InfoPlist.strings */; };
 		63ED46B218A4B836002C8674 /* LoginDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ED46B118A4B836002C8674 /* LoginDemoTests.m */; };
+		63ED46C418A4C030002C8674 /* M13Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ED46C318A4C030002C8674 /* M13Checkbox.m */; };
+		63ED46D018A4C33B002C8674 /* Login_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ED46CF18A4C33B002C8674 /* Login_iphone.storyboard */; };
+		63ED46D618A4C9A4002C8674 /* LoginController_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ED46D518A4C9A4002C8674 /* LoginController_iphone.m */; };
+		63ED46DA18A4DB9C002C8674 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ED46D918A4DB9C002C8674 /* Tools.m */; };
+		63ED46DD18A4E341002C8674 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ED46DC18A4E341002C8674 /* Constant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,15 @@
 		63ED46AD18A4B836002C8674 /* LoginDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginDemoTests-Info.plist"; sourceTree = "<group>"; };
 		63ED46AF18A4B836002C8674 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63ED46B118A4B836002C8674 /* LoginDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDemoTests.m; sourceTree = "<group>"; };
+		63ED46C218A4C030002C8674 /* M13Checkbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13Checkbox.h; sourceTree = "<group>"; };
+		63ED46C318A4C030002C8674 /* M13Checkbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13Checkbox.m; sourceTree = "<group>"; };
+		63ED46CF18A4C33B002C8674 /* Login_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login_iphone.storyboard; sourceTree = "<group>"; };
+		63ED46D418A4C9A4002C8674 /* LoginController_iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController_iphone.h; sourceTree = "<group>"; };
+		63ED46D518A4C9A4002C8674 /* LoginController_iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController_iphone.m; sourceTree = "<group>"; };
+		63ED46D818A4DB9C002C8674 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		63ED46D918A4DB9C002C8674 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		63ED46DB18A4E341002C8674 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		63ED46DC18A4E341002C8674 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				63ED468918A4B835002C8674 /* LoginDemo */,
-				63ED46AB18A4B836002C8674 /* LoginDemoTests */,
 				63ED468218A4B835002C8674 /* Frameworks */,
 				63ED468118A4B835002C8674 /* Products */,
 			);
@@ -114,6 +127,10 @@
 		63ED468918A4B835002C8674 /* LoginDemo */ = {
 			isa = PBXGroup;
 			children = (
+				63ED46D718A4DB89002C8674 /* Tools */,
+				63ED46CA18A4C14C002C8674 /* controller_ipad */,
+				63ED46CB18A4C14C002C8674 /* controller_iphone */,
+				63ED46C018A4C030002C8674 /* thirty */,
 				63ED469218A4B835002C8674 /* AppDelegate.h */,
 				63ED469318A4B835002C8674 /* AppDelegate.m */,
 				63ED469518A4B835002C8674 /* Main_iPhone.storyboard */,
@@ -129,6 +146,7 @@
 		63ED468A18A4B835002C8674 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63ED46AB18A4B836002C8674 /* LoginDemoTests */,
 				63ED468B18A4B835002C8674 /* LoginDemo-Info.plist */,
 				63ED468C18A4B835002C8674 /* InfoPlist.strings */,
 				63ED468F18A4B835002C8674 /* main.m */,
@@ -144,7 +162,7 @@
 				63ED46AC18A4B836002C8674 /* Supporting Files */,
 			);
 			path = LoginDemoTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		63ED46AC18A4B836002C8674 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -153,6 +171,51 @@
 				63ED46AE18A4B836002C8674 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63ED46C018A4C030002C8674 /* thirty */ = {
+			isa = PBXGroup;
+			children = (
+				63ED46C118A4C030002C8674 /* checkbox */,
+			);
+			path = thirty;
+			sourceTree = "<group>";
+		};
+		63ED46C118A4C030002C8674 /* checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				63ED46C218A4C030002C8674 /* M13Checkbox.h */,
+				63ED46C318A4C030002C8674 /* M13Checkbox.m */,
+			);
+			path = checkbox;
+			sourceTree = "<group>";
+		};
+		63ED46CA18A4C14C002C8674 /* controller_ipad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller_ipad;
+			sourceTree = "<group>";
+		};
+		63ED46CB18A4C14C002C8674 /* controller_iphone */ = {
+			isa = PBXGroup;
+			children = (
+				63ED46CF18A4C33B002C8674 /* Login_iphone.storyboard */,
+				63ED46D418A4C9A4002C8674 /* LoginController_iphone.h */,
+				63ED46D518A4C9A4002C8674 /* LoginController_iphone.m */,
+			);
+			path = controller_iphone;
+			sourceTree = "<group>";
+		};
+		63ED46D718A4DB89002C8674 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				63ED46D818A4DB9C002C8674 /* Tools.h */,
+				63ED46D918A4DB9C002C8674 /* Tools.m */,
+				63ED46DB18A4E341002C8674 /* Constant.h */,
+				63ED46DC18A4E341002C8674 /* Constant.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +297,7 @@
 				63ED469A18A4B835002C8674 /* Main_iPad.storyboard in Resources */,
 				63ED469F18A4B835002C8674 /* Images.xcassets in Resources */,
 				63ED469718A4B835002C8674 /* Main_iPhone.storyboard in Resources */,
+				63ED46D018A4C33B002C8674 /* Login_iphone.storyboard in Resources */,
 				63ED468E18A4B835002C8674 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,9 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63ED46C418A4C030002C8674 /* M13Checkbox.m in Sources */,
 				63ED469D18A4B835002C8674 /* ViewController.m in Sources */,
+				63ED46DD18A4E341002C8674 /* Constant.m in Sources */,
 				63ED469418A4B835002C8674 /* AppDelegate.m in Sources */,
+				63ED46DA18A4DB9C002C8674 /* Tools.m in Sources */,
 				63ED469018A4B835002C8674 /* main.m in Sources */,
+				63ED46D618A4C9A4002C8674 /* LoginController_iphone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +463,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginDemo/LoginDemo-Prefix.pch";
 				INFOPLIST_FILE = "LoginDemo/LoginDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,7 +478,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginDemo/LoginDemo-Prefix.pch";
 				INFOPLIST_FILE = "LoginDemo/LoginDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

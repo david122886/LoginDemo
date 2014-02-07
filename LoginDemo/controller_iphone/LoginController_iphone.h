@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  LoginController_iphone.h
 //  LoginDemo
 //
 //  Created by david on 14-2-7.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@interface LoginController_iphone : UIViewController<UITextFieldDelegate>
 
 @end
