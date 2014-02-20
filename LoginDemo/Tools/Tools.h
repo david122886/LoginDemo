@@ -36,4 +36,12 @@
  */
 +(void)judgeNetWorkStatus:(void (^)(NSString*networkStatus))networkStatus;
 
+/**
+ * @brief 单位换算，吧bytes转换成带指定单位大小
+ *
+ * @param  bytes：字节数
+ *
+ * @return 带单位的大小
+ */
++(NSString*)convertFileSizeUnitWithBytes:(NSString*)bytes;
 @end
