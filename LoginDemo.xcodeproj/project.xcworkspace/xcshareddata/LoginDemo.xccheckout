@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3C8428C8-FF49-4753-B7A4-45A6C159A3C1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LoginDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0C5F1D94-1675-4B1D-AF00-496A819799A7</key>
+		<string>ssh://github.com/david122886/LoginDemo.git</string>
+		<key>56432E60-EA71-46B7-93F2-AFEB14E8C8FC</key>
+		<string>ssh://github.com/david122886/LoginDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LoginDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0C5F1D94-1675-4B1D-AF00-496A819799A7</key>
+		<string>../..</string>
+		<key>56432E60-EA71-46B7-93F2-AFEB14E8C8FC</key>
+		<string>../../LoginDemo</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/david122886/LoginDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0C5F1D94-1675-4B1D-AF00-496A819799A7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0C5F1D94-1675-4B1D-AF00-496A819799A7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LoginDemo</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>56432E60-EA71-46B7-93F2-AFEB14E8C8FC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LoginDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

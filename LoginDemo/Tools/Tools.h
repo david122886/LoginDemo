@@ -24,4 +24,16 @@
 
 ///弹出提示信息
 +(void)alertMsg:(NSString*)msg;
+
++(BOOL)requestFailure:(NSError*)error tipMessageBlock:(void(^)(NSString *tipMsg))msg;
+
+/**
+ * @brief 检测网络连接类型
+ *
+ * @param
+ *
+ * @return networkStatus :ReachableViaWWAN：三G网络，ReachableViaWiFi：wifi网络，NotReachable：无网络
+ */
++(void)judgeNetWorkStatus:(void (^)(NSString*networkStatus))networkStatus;
+
 @end

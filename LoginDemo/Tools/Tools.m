@@ -25,4 +25,70 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
     [alert show];
 }
+
++(BOOL)requestFailure:(NSError*)error tipMessageBlock:(void(^)(NSString *tipMsg))msg{
+    if (!error) {
+        return NO;
+    }
+    NSString *tip = [error.userInfo objectForKey:@"NSLocalizedDescription"];
+    if (!tip) {
+        return NO;
+    }
+    
+    if ([tip isEqualToString:@"The request timed out"]) {
+        msg(@"连接网络失败");
+        return YES;
+    }
+    
+    if ([tip isEqualToString:@"A connection failure occurred"] || [tip isEqualToString:@"The Internet connection appears to be offline."]) {
+        msg(@"当前网络不可用");
+        return YES;
+    }
+    
+    if ([tip isEqualToString:@"Could not connect to the server."]) {
+        msg(@"无法连接服务器");
+        return YES;
+    }
+    if ([tip isEqualToString:@"Expected status code in (200-299)"]) {
+        msg(@"无法连接服务器");
+        return YES;
+    }
+    if ([tip isEqualToString:@"The network connection was lost."]) {
+        msg(@"无法连接服务器");
+        return YES;
+    }
+    
+    if ([tip isEqualToString:@"未能连接到服务器。"]) {
+        msg(@"未能连接到服务器");
+        return YES;
+    }
+    
+    if ([tip isEqualToString:@"似乎已断开与互联网的连接。"]) {
+        msg(@"无法连接网络");
+        return YES;
+    }
+    return NO;
+}
+
++(void)judgeNetWorkStatus:(void (^)(NSString*networkStatus))networkStatus{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *str = @"NotReachable";
+        Reachability *r = [Reachability reachabilityWithHostName:@"lms.finance365.com"];
+        switch ([r currentReachabilityStatus]) {
+            case NotReachable:
+                str = @"NotReachable";
+                break;
+            case ReachableViaWWAN:
+                str = @"ReachableViaWWAN";
+                break;
+            case ReachableViaWiFi:
+                str = @"ReachableViaWiFi";
+                break;
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            networkStatus(str);
+        });
+    });
+}
+
 @end

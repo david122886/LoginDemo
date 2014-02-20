@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63ABEB1918B5F3090015DE23 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ABEB1818B5F3090015DE23 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		63ABEB2118B5F9790015DE23 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ABEB2018B5F9790015DE23 /* SystemConfiguration.framework */; };
 		63ED468418A4B835002C8674 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED468318A4B835002C8674 /* Foundation.framework */; };
 		63ED468618A4B835002C8674 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED468518A4B835002C8674 /* CoreGraphics.framework */; };
 		63ED468818A4B835002C8674 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED468718A4B835002C8674 /* UIKit.framework */; };
@@ -26,7 +28,6 @@
 		63ED46D018A4C33B002C8674 /* Login_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ED46CF18A4C33B002C8674 /* Login_iphone.storyboard */; };
 		63ED46D618A4C9A4002C8674 /* LoginController_iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ED46D518A4C9A4002C8674 /* LoginController_iphone.m */; };
 		63ED46DA18A4DB9C002C8674 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ED46D918A4DB9C002C8674 /* Tools.m */; };
-		63ED46DD18A4E341002C8674 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ED46DC18A4E341002C8674 /* Constant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63ABEB1718B5F3090015DE23 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		63ABEB1818B5F3090015DE23 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		63ABEB1A18B5F6DD0015DE23 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		63ABEB1C18B5F7070015DE23 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		63ABEB1E18B5F71B0015DE23 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		63ABEB2018B5F9790015DE23 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		63ED468018A4B835002C8674 /* LoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ED468318A4B835002C8674 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63ED468518A4B835002C8674 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,7 +75,6 @@
 		63ED46D818A4DB9C002C8674 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		63ED46D918A4DB9C002C8674 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		63ED46DB18A4E341002C8674 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
-		63ED46DC18A4E341002C8674 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63ABEB2118B5F9790015DE23 /* SystemConfiguration.framework in Frameworks */,
 				63ED468618A4B835002C8674 /* CoreGraphics.framework in Frameworks */,
 				63ED468818A4B835002C8674 /* UIKit.framework in Frameworks */,
 				63ED468418A4B835002C8674 /* Foundation.framework in Frameworks */,
@@ -95,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63ABEB1618B5F3090015DE23 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				63ABEB1718B5F3090015DE23 /* Reachability.h */,
+				63ABEB1818B5F3090015DE23 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		63ED467718A4B835002C8674 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +132,10 @@
 		63ED468218A4B835002C8674 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63ABEB2018B5F9790015DE23 /* SystemConfiguration.framework */,
+				63ABEB1E18B5F71B0015DE23 /* Security.framework */,
+				63ABEB1C18B5F7070015DE23 /* AssetsLibrary.framework */,
+				63ABEB1A18B5F6DD0015DE23 /* CFNetwork.framework */,
 				63ED468318A4B835002C8674 /* Foundation.framework */,
 				63ED468518A4B835002C8674 /* CoreGraphics.framework */,
 				63ED468718A4B835002C8674 /* UIKit.framework */,
@@ -176,6 +196,7 @@
 		63ED46C018A4C030002C8674 /* thirty */ = {
 			isa = PBXGroup;
 			children = (
+				63ABEB1618B5F3090015DE23 /* Reachability */,
 				63ED46C118A4C030002C8674 /* checkbox */,
 			);
 			path = thirty;
@@ -213,7 +234,6 @@
 				63ED46D818A4DB9C002C8674 /* Tools.h */,
 				63ED46D918A4DB9C002C8674 /* Tools.m */,
 				63ED46DB18A4E341002C8674 /* Constant.h */,
-				63ED46DC18A4E341002C8674 /* Constant.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -319,7 +339,7 @@
 			files = (
 				63ED46C418A4C030002C8674 /* M13Checkbox.m in Sources */,
 				63ED469D18A4B835002C8674 /* ViewController.m in Sources */,
-				63ED46DD18A4E341002C8674 /* Constant.m in Sources */,
+				63ABEB1918B5F3090015DE23 /* Reachability.m in Sources */,
 				63ED469418A4B835002C8674 /* AppDelegate.m in Sources */,
 				63ED46DA18A4DB9C002C8674 /* Tools.m in Sources */,
 				63ED469018A4B835002C8674 /* main.m in Sources */,
@@ -546,6 +566,7 @@
 				63ED46B718A4B836002C8674 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63ED46B818A4B836002C8674 /* Build configuration list for PBXNativeTarget "LoginDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +575,7 @@
 				63ED46BA18A4B836002C8674 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

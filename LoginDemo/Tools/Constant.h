@@ -7,7 +7,4 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface Constant : NSObject
-
-@end
+#import "Reachability.h"
