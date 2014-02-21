@@ -7,8 +7,21 @@
 //
 
 #import "Tools.h"
+@interface Tools()
+@property (nonatomic,strong) UIAlertView *alert;
++(Tools*)defaultTools;
+@end
 
 @implementation Tools
++(Tools*)defaultTools{
+    static Tools *defaultTool = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        defaultTool = [[Tools alloc] init];
+    });
+    return defaultTool;
+}
+
 +(BOOL)identifyEmailString:(NSString*)emailstring{
     if (!emailstring || [emailstring isEqualToString:@""]) {
         return NO;
@@ -21,6 +34,10 @@
 +(void)alertMsg:(NSString*)msg{
     if (!msg || [msg isEqualToString:@""]) {
         return;
+    }
+    if ([Tools defaultTools].alert != nil) {
+        UIAlertView *alert = [Tools defaultTools].alert;
+        [alert dismissWithClickedButtonIndex:0 animated:NO];
     }
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
     [alert show];
