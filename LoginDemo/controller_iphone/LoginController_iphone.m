@@ -40,6 +40,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSLog(@"9*60*60*60+21*60*60+54*60+45 =>%@",[Tools formateDateStringWithSecond:9*60*60*60+21*60*60+54*60+45]);
+    NSLog(@"78*60*60+12*60+2 =>%@",[Tools formateDateStringWithSecond:78*60*60+12*60+2]);
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardUP:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardDOWN:) name: UIKeyboardWillHideNotification object:nil];
 	// Do any additional setup after loading the view.

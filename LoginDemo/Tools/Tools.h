@@ -44,4 +44,13 @@
  * @return 带单位的大小
  */
 +(NSString*)convertFileSizeUnitWithBytes:(NSString*)bytes;
+
+///把秒数转换成时间字符串，如：61 => 1'1"
++(NSString*)formateDateStringWithSecond:(int)second;
+
+///过滤json数据，可能出现<NULL>,null,等等情况
++(NSString *)filterValue:(NSString*)value;
+
+///异步请求网络数据
++(void)requestDataWithRequest:(NSURLRequest*)request withSuccess:(void (^)(NSDictionary *dicData))success withFailure:(void (^)(NSError *error))failure;
 @end
